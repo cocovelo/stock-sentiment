@@ -1,0 +1,22 @@
+# Use the official Python image for your base
+FROM python:3.10-slim
+
+# Set environment variables for better Python execution
+ENV PYTHONUNBUFFERED 1
+ENV APP_HOME /app
+WORKDIR $APP_HOME
+
+# Copy the requirements file and install dependencies
+COPY requirements.txt .
+# Use a specific index URL for faster and more stable installs
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the application code
+COPY main.py .
+
+# Expose the port Cloud Run uses
+EXPOSE 8080
+
+# Run the application using Gunicorn's official entry point method
+# This is a robust form of the command we tried previously
+CMD exec gunicorn --bind :$PORT --workers 1 main:app

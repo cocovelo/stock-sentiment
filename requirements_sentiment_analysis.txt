@@ -1,0 +1,9 @@
+# Requirements for sentiment comparison analysis script
+# Install with: pip install -r requirements_sentiment_analysis.txt
+
+firebase-admin>=6.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0

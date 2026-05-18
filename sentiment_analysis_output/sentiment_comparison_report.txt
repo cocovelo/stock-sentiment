@@ -1,0 +1,90 @@
+================================================================================
+SENTIMENT COMPARISON ANALYSIS: FinBERT vs MarketAux
+================================================================================
+
+Analysis Date: 2025-11-12 17:45:27
+Total Observations: 1532
+Unique Stocks: 65
+Unique Indexes: 5
+Unique Timepoints: 21
+
+--------------------------------------------------------------------------------
+OVERALL CORRELATION RESULTS (Z-Score Normalized)
+--------------------------------------------------------------------------------
+
+FinBERT Sentiment:
+  Pearson Correlation (r): 0.0145
+  R-squared: 0.0002
+  P-value: 0.570544
+  Spearman Correlation: -0.0142
+  Original Mean: -0.2097
+  Original Std Dev: 0.3586
+
+MarketAux Sentiment:
+  Pearson Correlation (r): 0.0919
+  R-squared: 0.0084
+  P-value: 0.000315
+  Spearman Correlation: 0.0496
+  Original Mean: 0.3277
+  Original Std Dev: 0.2695
+
+Price Change %:
+  Original Mean: 0.2886%
+  Original Std Dev: 1.3698%
+
+--------------------------------------------------------------------------------
+OVERALL WINNER
+--------------------------------------------------------------------------------
+✓ MarketAux has STRONGER correlation: |r| = 0.0919
+  FinBERT: |r| = 0.0145
+  Difference: 0.0774 (533.8% stronger)
+
+--------------------------------------------------------------------------------
+BY-INDEX BREAKDOWN
+--------------------------------------------------------------------------------
+
+
+NASDAQ:
+  Observations: 418
+  FinBERT   - r: -0.0311, R²: 0.0010, p: 0.5255
+  MarketAux - r:  0.1015, R²: 0.0103, p: 0.0381
+  Winner: MarketAux
+
+S&P 500:
+  Observations: 412
+  FinBERT   - r: -0.0145, R²: 0.0002, p: 0.7691
+  MarketAux - r:  0.1148, R²: 0.0132, p: 0.0198
+  Winner: MarketAux
+
+Dow Jones:
+  Observations: 392
+  FinBERT   - r:  0.0603, R²: 0.0036, p: 0.2333
+  MarketAux - r:  0.0364, R²: 0.0013, p: 0.4726
+  Winner: FinBERT
+
+Gold:
+  Observations: 159
+  FinBERT   - r:  0.0311, R²: 0.0010, p: 0.6974
+  MarketAux - r:  0.0319, R²: 0.0010, p: 0.6897
+  Winner: MarketAux
+
+FTSE 100:
+  Observations: 151
+  FinBERT   - r:  0.0682, R²: 0.0047, p: 0.4052
+  MarketAux - r: -0.0946, R²: 0.0090, p: 0.2478
+  Winner: MarketAux
+
+--------------------------------------------------------------------------------
+SUMMARY STATISTICS
+--------------------------------------------------------------------------------
+
+Indexes where FinBERT wins: 1/5
+Indexes where MarketAux wins: 4/5
+
+Average |r| for FinBERT: 0.0411
+Average |r| for MarketAux: 0.0758
+
+Average R² for FinBERT: 0.0021
+Average R² for MarketAux: 0.0070
+
+================================================================================
